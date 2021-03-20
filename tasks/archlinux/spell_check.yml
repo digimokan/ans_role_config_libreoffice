@@ -1,0 +1,32 @@
+- name: "Install 'hunspell' package, for LibreOffice Writer spell check"
+  community.general.pacman:
+    name: hunspell
+    state: present
+    extra_args: "--asdeps"
+  become: true
+  become_user: root
+
+- name: "Install 'hunspell-en_US' package, for LibreOffice Writer spell check"
+  community.general.pacman:
+    name: hunspell-en_US
+    state: present
+    extra_args: "--asdeps"
+  become: true
+  become_user: root
+
+- name: "Install 'hyphen' package, for LibreOffice Writer spell check"
+  community.general.pacman:
+    name: hyphen
+    state: present
+    extra_args: "--asdeps"
+  become: true
+  become_user: root
+
+- name: "Install 'hyphen-en' package, for LibreOffice Writer spell check"
+  community.general.pacman:
+    name: hyphen-en
+    state: present
+    extra_args: "--asdeps"
+  become: true
+  become_user: root
+

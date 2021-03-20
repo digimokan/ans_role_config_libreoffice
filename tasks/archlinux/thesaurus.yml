@@ -1,0 +1,16 @@
+- name: "Install 'libmythes' package, for LibreOffice Writer thesaurus"
+  community.general.pacman:
+    name: libmythes
+    state: present
+    extra_args: "--asdeps"
+  become: true
+  become_user: root
+
+- name: "Install 'mythes-en' package, for LibreOffice Writer thesaurus"
+  community.general.pacman:
+    name: mythes-en
+    state: present
+    extra_args: "--asdeps"
+  become: true
+  become_user: root
+
