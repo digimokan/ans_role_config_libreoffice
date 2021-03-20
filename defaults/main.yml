@@ -2,5 +2,5 @@
 enable_spell_check: true
 
 # configure thesaurus tool in Writer application
-enable_thesaurus: false
+enable_thesaurus: true
 
