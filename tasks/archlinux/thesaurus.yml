@@ -10,7 +10,8 @@
   community.general.pacman:
     name: mythes-en
     state: present
-    extra_args: "--asdeps"
+    # NOTE: as of 2020-04-03, not marked as dep of libmythes, so avoid orphaning
+    # extra_args: "--asdeps"
   become: true
   become_user: root
 
