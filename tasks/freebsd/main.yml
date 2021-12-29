@@ -1,0 +1,13 @@
+- name: "Install 'libreoffice' package"
+  ansible.builtin.package:
+    name: libreoffice
+    state: present
+  become: true
+  become_user: root
+
+- ansible.builtin.include_tasks: freebsd/spell_check.yml
+  when: enable_spell_check
+
+- ansible.builtin.include_tasks: freebsd/thesaurus.yml
+  when: enable_thesaurus
+
