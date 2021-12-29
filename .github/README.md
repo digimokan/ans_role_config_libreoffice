@@ -23,6 +23,7 @@ Install and configure the LibreOffice office application suite.
 ## Supported Operating Systems
 
 * Arch Linux.
+* FreeBSD.
 
 ## Quick Start
 
