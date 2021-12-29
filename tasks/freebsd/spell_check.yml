@@ -1,17 +1,7 @@
-# - name: "Install 'hunspell-en_US' package, for LibreOffice Writer spell check"
-#   community.general.pacman:
-#     name: hunspell-en_US
-#     state: present
-#     extra_args: "--asdeps"
-#   become: true
-#   become_user: root
-
-# - name: "Install 'hyphen-en' package, for LibreOffice Writer spell check"
-#   community.general.pacman:
-#     name: hyphen-en
-#     state: present
-#     # NOTE: as of 2020-04-03, not marked as dep of hyphen, so avoid orphaning
-#     # extra_args: "--asdeps"
-#   become: true
-#   become_user: root
+- name: "Install 'en-hunspell' package, for Writer spell check as-you-type"
+  ansible.builtin.package:
+    name: en-hunspell
+    state: present
+  become: true
+  become_user: root
 

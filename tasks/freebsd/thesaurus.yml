@@ -1,17 +1,7 @@
-# - name: "Install 'libmythes' package, for LibreOffice Writer thesaurus"
-#   community.general.pacman:
-#     name: libmythes
-#     state: present
-#     extra_args: "--asdeps"
-#   become: true
-#   become_user: root
-
-# - name: "Install 'mythes-en' package, for LibreOffice Writer thesaurus"
-#   community.general.pacman:
-#     name: mythes-en
-#     state: present
-#     # NOTE: as of 2020-04-03, not marked as dep of libmythes, so avoid orphaning
-#     # extra_args: "--asdeps"
-#   become: true
-#   become_user: root
+- name: "Install 'en-mythes' package, for Writer thesaurus"
+  ansible.builtin.package:
+    name: en-mythes
+    state: present
+  become: true
+  become_user: root
 
