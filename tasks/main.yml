@@ -1,8 +1,8 @@
-- name: "Configure LibreOffice for Arch Linux"
+- name: "Install and configure LibreOffice for Arch Linux"
   ansible.builtin.include_tasks: archlinux/main.yml
   when: ansible_os_family == "Archlinux"
 
-- name: "Configure LibreOffice for FreeBSD"
+- name: "Install and configure LibreOffice for FreeBSD"
   ansible.builtin.include_tasks: freebsd/main.yml
   when: ansible_os_family == "FreeBSD"
 
