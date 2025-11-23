@@ -1,0 +1,3 @@
+# command to execute to run the general libreoffice program (to open any doc)
+libreoffice_main_cmd: 'libreoffice'
+

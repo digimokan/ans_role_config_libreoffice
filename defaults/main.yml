@@ -1,9 +1,0 @@
-# configure spell-checking in Writer application
-enable_spell_check: true
-
-# configure thesaurus tool in Writer application
-enable_thesaurus: true
-
-# command to execute to run the general libreoffice program (to open any doc)
-libreoffice_main_cmd: 'libreoffice'
-

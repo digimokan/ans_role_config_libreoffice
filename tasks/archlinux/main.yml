@@ -6,8 +6,8 @@
   become_user: root
 
 - ansible.builtin.include_tasks: archlinux/spell_check.yml
-  when: enable_spell_check
+  when: libreoffice_enable_spell_check
 
 - ansible.builtin.include_tasks: archlinux/thesaurus.yml
-  when: enable_thesaurus
+  when: libreoffice_enable_thesaurus
 

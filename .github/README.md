@@ -54,13 +54,18 @@ Install and configure the LibreOffice office application suite.
        - name: "Install and configure the LibreOffice office application suite"
          ansible.builtin.include_role:
            name: ans_role_config_libreoffice
+           public: true
    ```
 
 ## Role Options
 
-See the role `defaults` file, for overridable vars:
+Vars with default values, which can be overridden in the playbook:
 
-  * [defaults/main.yml](../defaults/main.yml)
+  * [overridable](../defaults/main/overridable/main.yml)
+
+Vars defined by this role, exported with `public: true`, for use in other roles:
+
+  * [export](../defaults/main/export/main.yml)
 
 ## Contributing
 

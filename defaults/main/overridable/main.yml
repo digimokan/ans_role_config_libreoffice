@@ -1,0 +1,6 @@
+# configure spell-checking in Writer application
+libreoffice_enable_spell_check: true
+
+# configure thesaurus tool in Writer application
+libreoffice_enable_thesaurus: true
+
